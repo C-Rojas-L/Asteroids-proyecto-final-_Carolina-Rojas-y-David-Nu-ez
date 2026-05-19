@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 105a47849790a495bbf776cb22bc2203
+guid: f9326af59db58fc4c8e7b9936fe81dd2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6014363117872894546
-    second: Disparo ovni_0
+      213: -3876901037550424603
+    second: Disparo_ovni_V2_0
   - first:
-      213: 4439987894759425876
-    second: Disparo ovni_1
+      213: 6737607818733862610
+    second: Disparo_ovni_V2_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -99,30 +99,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Disparo ovni_0
+      name: Disparo_ovni_V2_0
       rect:
         serializedVersion: 2
-        x: 86
-        y: 361
-        width: 16
-        height: 16
+        x: 162
+        y: 24
+        width: 198
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eada9f81c90b88ca0800000000000000
-      internalID: -6014363117872894546
+      spriteID: 5eda67b0c0b723ac0800000000000000
+      internalID: -3876901037550424603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Disparo ovni_1
+      name: Disparo_ovni_V2_1
       rect:
         serializedVersion: 2
-        x: 98
-        y: 36
-        width: 366
-        height: 366
+        x: 348
+        y: 271
+        width: 21
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4578b2a57710e9d30800000000000000
-      internalID: 4439987894759425876
+      spriteID: 2deb68f1d9ac08d50800000000000000
+      internalID: 6737607818733862610
       vertices: []
       indices: 
       edges: []
@@ -163,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Disparo ovni_0: -6014363117872894546
-      Disparo ovni_1: 4439987894759425876
+      Disparo_ovni_V2_0: -3876901037550424603
+      Disparo_ovni_V2_1: 6737607818733862610
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

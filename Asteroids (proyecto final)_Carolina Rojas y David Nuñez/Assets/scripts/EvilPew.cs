@@ -1,7 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class pew : MonoBehaviour
+public class EvilPew : MonoBehaviour
 {
     public float speed = 9f;
     public float lifeSpan = 2f;
@@ -10,7 +10,7 @@ public class pew : MonoBehaviour
     void Start()
     {
         GetComponent<Rigidbody2D>().linearVelocity =
-           transform.up * speed;
+           -transform.up * speed;
 
         Destroy(gameObject, lifeSpan);
 

@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class nave : MonoBehaviour
 {
@@ -10,7 +11,10 @@ public class nave : MonoBehaviour
     public float rtt = 180;
     float maxSpeed = 4.5f;
     public GameObject gun;
+    public GameObject blast;
     public Transform Aimer;
+
+    Animator anima;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -19,7 +23,8 @@ public class nave : MonoBehaviour
      
         ship = GetComponent<Rigidbody2D>();
         //rtt = 180;
-    
+
+        anima = GetComponent<Animator>();
     }
     private void FixedUpdate()
     {
@@ -32,7 +37,7 @@ public class nave : MonoBehaviour
     {
         if (UnityEngine.InputSystem.Keyboard.current.upArrowKey.isPressed)        //MOVIMIENTO
         {
-            ship.AddForce(transform.up * 0.1f , ForceMode2D.Impulse);       
+            ship.AddForce(transform.up * 0.1f, ForceMode2D.Impulse);
         }
 
         if (UnityEngine.InputSystem.Keyboard.current.leftArrowKey.isPressed)
@@ -48,13 +53,37 @@ public class nave : MonoBehaviour
 
         if (UnityEngine.InputSystem.Keyboard.current.spaceKey.wasPressedThisFrame)     //ATAQUE
         {
-            Instantiate 
+            Instantiate
                 (gun,
           Aimer.position,
           Aimer.rotation);
+         
+            Instantiate
+            (blast,
+            Aimer.position,
+            Aimer.rotation);
         }
-
-
-
     }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)                            //GAME OVER
+    {
+        if (collision.gameObject.CompareTag("asteroid"))
+        {
+
+            //Destroy(gameObject);
+
+            SceneManager.LoadScene(0);
+
+        }
+    }
+    public void siguiente()
+    {
+        if (UnityEngine.InputSystem.Keyboard.current.upArrowKey.isPressed)
+        {
+            anima.SetTrigger("siguiente");
+        }
+    }
+
 }
+

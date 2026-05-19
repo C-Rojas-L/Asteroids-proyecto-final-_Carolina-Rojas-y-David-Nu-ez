@@ -3,8 +3,7 @@ using UnityEngine;
 public class miniRoid : MonoBehaviour
 {
 
-    public Transform spawnpos;
-    public GameObject subAsteroid;
+
     Rigidbody2D rb;
 
 

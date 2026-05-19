@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4954656640320169789}
   - component: {fileID: -7564155667296209508}
   - component: {fileID: 9178787869373249974}
+  - component: {fileID: 8367907107553625107}
   m_Layer: 0
   m_Name: Asteroide mini_0
   m_TagString: asteroid
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1435358559562227365}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.715977, y: 1.9374989, z: 0}
+  m_LocalPosition: {x: -6.3428316, y: -0.40611959, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -156,3 +157,15 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1.26
+--- !u!114 &8367907107553625107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435358559562227365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6845b7006a714ee43965b70378761c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::miniRoid

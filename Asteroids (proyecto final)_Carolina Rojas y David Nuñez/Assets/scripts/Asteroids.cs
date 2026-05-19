@@ -10,6 +10,9 @@ public class Destruibles : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        rb = collision.gameObject.GetComponent<Rigidbody2D>();
+        rb.AddForce(Random.insideUnitCircle.normalized * 6f, ForceMode2D.Impulse);
+
         if (collision.gameObject.CompareTag("pew"))
         {
             Vector2 offset = new Vector2(
@@ -17,8 +20,7 @@ public class Destruibles : MonoBehaviour
             Random.Range(-1f, 1f));
             
             
-            rb = collision.gameObject.GetComponent<Rigidbody2D>();
-            rb.AddForce(Random.insideUnitCircle.normalized * 6f,ForceMode2D.Impulse);
+
 
 
             for (int i = 0; i < 3; i++)

@@ -13,8 +13,8 @@ public class spawner : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             Vector2 posicion = new Vector2(
-                Random.Range(-5f, 4f),       //X
-                Random.Range(-8f, 8f));     //Y
+                Random.Range(-3f, 2f),       //X
+                Random.Range(-6f, 6f));     //Y
 
             Instantiate(
                 Asteroid,
